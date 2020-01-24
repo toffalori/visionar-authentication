@@ -151,7 +151,8 @@ class Jwt_Auth_Public
         );
 
         /** Let the user modify the token data before the sign. */
-        $token = JWT::encode(apply_filters('jwt_auth_token_before_sign', $token, $user), $secret_key);
+	$token = JWT::encode(apply_filters('jwt_auth_token_before_sign', $token, $user), $secret_key);
+	wp_set_auth_cookie( $user->data->ID, false, is_ssl() );
 
         /** The token is signed, now create the object with no sensible user data to the client*/
         $data = array(
@@ -159,6 +160,7 @@ class Jwt_Auth_Public
             'user_email' => $user->data->user_email,
             'user_nicename' => $user->data->user_nicename,
             'user_display_name' => $user->data->display_name,
+            'user_id' => $user->data->ID
         );
 
         /** Let the user modify the data before send it back */

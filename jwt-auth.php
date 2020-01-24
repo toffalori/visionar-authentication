@@ -8,18 +8,18 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://enriquechavez.co
- * @since             1.0.0
+ * @link              https://www.visionar.com
+ * @since             1.2.7
  *
  * @wordpress-plugin
- * Plugin Name:       JWT Authentication for WP-API
- * Plugin URI:        https://enriquechavez.co
+ * Plugin Name:       Visionar Authentication
+ * Plugin URI:        https://www.visionar.com
  * Description:       Extends the WP REST API using JSON Web Tokens Authentication as an authentication method.
- * Version:           1.2.6
- * Author:            Enrique Chavez
- * Author URI:        https://enriquechavez.co
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Version:           1.2.7
+ * Author:            visionar GmbH
+ * Author URI:        https://www.visionar.com
+ * License:           unlicensed
+ * License URI:       http://www.visionar.com
  * Text Domain:       jwt-auth
  * Domain Path:       /languages
  */
